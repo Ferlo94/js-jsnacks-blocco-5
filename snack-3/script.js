@@ -71,6 +71,7 @@ const macchine = [
 
 arrBenza = [];
 arrMiste = [];
+arrDiesel = [];
 
 const benza = macchine.filter((auto) => {
 
@@ -80,3 +81,12 @@ const benza = macchine.filter((auto) => {
 });
 
 console.log(arrBenza);
+
+const diesel = macchine.filter((auto) => {
+
+    if(auto.alimentazione == "diesel") {
+        arrDiesel.push(auto);
+    }
+});
+
+console.log(arrDiesel);
